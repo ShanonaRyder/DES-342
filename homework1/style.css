@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    margin: 0;
+    margin: 2%;
 }
 img{
     width: 100%;
@@ -16,7 +16,7 @@ header .logo {
 }
 header .logo img{
     border-radius: 50%;
-    padding: 40px;
+    padding:30px;
 }
 header nav{
     flex: 70%;
@@ -24,10 +24,14 @@ header nav{
 header ul{
     list-style:none;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+}
+header li{
+    margin: 20px 0px;
+    font-size: 22px;
 }
 main{
-    border:2pc solid red;
+    border:20px solid rgb(243, 143, 193);
 }
 .flex-2{
     display: flex;
