@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC&display=swap');
+*{
+    background-color: black;
+    box-sizing: border-box;
+}
+img{
+    width:100%;
+}
+.one img{
+    width: 30%;
+}
+.name{
+    font-size: 1.8vw;
+    font-family: 'Vollkorn SC', serif;
+}
+.ind{
+    margin: auto;
+    overflow: hidden;
+}
+.right img{
+    width: 33vw;
+    float: right;
+}
+.right h1{
+    margin: 0 2% 0 0;
+    float: right;
+    text-align: right;
+    line-height: 0.8;
+}
+h1{
+    font-family: 'Vollkorn SC', serif;
+    color: white;
+    font-size: 8vw;
+}
+p{
+    padding-top: 5%;
+    margin: 0% 38% 20% 5%;
+    color: white;
+    font-size: 1.4vw;
+    line-height: 1.2;
+}
+.shmi{
+    padding-top: 2%;
+    display: inline-block;
+    text-align: center;
+}
+.owen-beru{
+    padding-top: 2%;
+    display: inline-block;
+    text-align: center;
+}
+.anakin{
+    padding-top: 2%;
+    display: inline-block;
+    text-align: center;
+}
+.padme{
+    padding-top: 2%;
+    display: inline-block;
+    text-align: center;
+}
+.luke{
+    padding-top: 2%;
+    display: inline-block;
+    text-align: center;
+}
+.leia{
+    padding-top: 2%;
+    display: inline-block;
+    text-align: center;
+}
+.han{
+    padding-top: 2%;
+    display: inline-block;
+    text-align: center;
+}
+.ben{
+    padding-top: 2%;
+    display: inline-block;
+    text-align: center;
+}
+.name{
+    color: white;
+    display: block;
+}
