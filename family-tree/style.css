@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 *{
     background-color: black;
+    background-image: url(images/stars.jpg);
+    background-size: 100vw;
+    background-repeat: repeat-y;
     box-sizing: border-box;
 }
 body{
@@ -11,11 +14,14 @@ img{
     width:100%;
 }
 .one img{
-    width: 30%;
+    width: 60%;
+    display: block;
+    margin: auto;
+    padding-top: 8%;
+    padding-bottom: 8%;
 }
-.name{
-    font-size: 1.8vw;
-    font-family: 'Vollkorn SC', serif;
+.two img{
+    width: 40%;
 }
 .ind img{
     width: 45vw;
@@ -44,6 +50,12 @@ h2{
     text-align: center;
     margin: 0.5% 0% 3% 0%;
 }
+h3{
+    font-family: 'Vollkorn SC', serif;
+    color: white;
+    font-size: 2vw;
+    margin: 0;
+}
 p{
     font-family: 'Inter', sans-serif;
     margin: 2% 15% 0% 15%;
@@ -54,10 +66,18 @@ p{
 }
 .shmi{
     padding-top: 2%;
+    display: block;
+    text-align: center;
+}
+.shmi img {
+    width: 20%;
+}
+.owen-beru{
+    padding-top: 2%;
     display: inline-block;
     text-align: center;
 }
-.owen-beru{
+.bail-breha{
     padding-top: 2%;
     display: inline-block;
     text-align: center;
@@ -91,8 +111,4 @@ p{
     padding-top: 2%;
     display: inline-block;
     text-align: center;
-}
-.name{
-    color: white;
-    display: block;
 }
