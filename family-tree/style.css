@@ -36,19 +36,19 @@ img{
     float: left;
     position: absolute;
     z-index: 0;
-    margin: -8% 2% 5% -8%;
+    margin: -6% 0% 0% -8%;
 }
 
 h1{
     font-family: 'Vollkorn SC', serif;
     color: #38a8f0;
-    width: 55vw;
+    width: 60vw;
     font-size: 5vw;
     line-height: 0.8;
     display: block;
     text-align: center;
     margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -76,11 +76,8 @@ p{
 }
 .shmi{
     padding-top: 2%;
-    display: block;
+    display: inline-block;
     text-align: center;
-}
-.shmi img {
-    width: 20%;
 }
 .owen-beru{
     padding-top: 2%;
@@ -124,24 +121,29 @@ p{
 }
 @media only screen and (max-width: 600px) {
     h1{
-        font-size: 8vw;
-        z-index: 2;
+        font-size: 10vw;
+        margin-bottom: 2.5%;
     }
     h2{
-        font-size: 1.5vw;
+        font-size: 2.5vw;
     }
     p{
-        font-size: 1.6vw;
+        font-size: 3vw;
         line-height:1.6;
         margin-top: 5%;
     }
     .ind img{
-        width: 65vw;
+        width: 75vw;
         display: block;
         margin-top: 5%;
     }
     .ind .planet{
-        width: 30vw;
-        margin: -6% 2% 5% -6%;
+        width: 25vw;
+        margin: -6% 0% 0% -6%;
+    }
+}
+@media only screen and (min-width: 600px){
+    .mobile-break{
+        display: none;
     }
 }
