@@ -1,55 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skywalker Family Tree</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <audio autoplay loop> <source src="audio/starwars-theme.mp3" type="audio/mp3">
-    </audio>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio id="theme" autoplay loop><source src="audio/starwars-theme.mp3" type="audio/mp3" /></audio>
     <section class="one">
-        <img src="images/starwars-logo.png" alt="">
+      <img src="images/starwars-logo.png" alt="" />
     </section>
     <section class="two">
+      <article class="row-one">
         <div class="shmi">
-            <a href="shmi-skywalker.html"><img src="images/shmi.png" alt=""></a>
-            <h3>Shmi</h3>
+          <a href="shmi-skywalker.html"><img src="images/shmi.png" alt="" /></a>
+          <h3>Shmi</h3>
         </div>
+      </article>
+      <article class="row-two">
         <div class="owen-beru">
-            <a href="owen-beru-lars.html"><img src="images/owen-beru.png" alt=""></a>
-            <h3>Owen and Beru</h3>
+          <a href="owen-beru-lars.html"><img src="images/owen-beru.png" alt="" /></a>
+          <h3>Owen and Beru</h3>
         </div>
-        <div class="bail-breha">
-            <a href="bail-breha-organa.html"><img src="images/bail-breha.png" alt=""></a>
-            <h3>Bail and Breha</h3>
-        </div>
+        <hr class="an-pad" />
         <div class="anakin">
-            <a href="anakin-skywalker.html"><img src="images/anakin.png" alt=""></a>
-            <h3>Anakin</h3>
+          <a href="anakin-skywalker.html"><img src="images/anakin.png" alt="" /></a>
+          <h3>Anakin</h3>
         </div>
         <div class="padme">
-            <a href="padme-amidala.html"><img src="images/padme.png" alt=""></a>
-            <h3>Padmé</h3>
+          <a href="padme-amidala.html"><img src="images/padme.png" alt="" /></a>
+          <h3>Padmé</h3>
         </div>
+        <div class="bail-breha">
+          <a href="bail-breha-organa.html"><img src="images/bail-breha.png" alt="" /></a>
+          <h3>Bail and Breha</h3>
+        </div>
+      </article>
+      <article class="row-three">
         <div class="luke">
-            <a href="luke-skywalker.html"><img src="images/luke.png" alt=""></a>
-            <h3>Luke</h3>
+          <a href="luke-skywalker.html"><img src="images/luke.png" alt="" /></a>
+          <h3>Luke</h3>
         </div>
+        <hr class="leia-han" />
+
         <div class="leia">
-            <a href="leia-organa.html"><img src="images/leia.png" alt=""></a>
-            <h3>Leia</h3>
+          <a href="leia-organa.html"><img src="images/leia.png" alt="" /></a>
+          <h3>Leia</h3>
         </div>
         <div class="han">
-            <a href="han-solo.html"><img src="images/han.png" alt=""></a>
-            <h3>han</h3>
+          <a href="han-solo.html"><img src="images/han.png" alt="" /></a>
+          <h3>han</h3>
         </div>
+      </article>
+
+      <article class="row-four">
         <div class="ben">
-            <a href="ben-solo.html"><img src="images/ben.png" alt=""></a>
-            <h3>Ben</h3>
+          <a href="ben-solo.html"><img src="images/ben.png" alt="" /></a>
+          <h3>Ben</h3>
         </div>
+      </article>
     </section>
-</body>
+    <script>
+      var theme = document.getElementById('theme')
+      window.addEventListener('load', event => {
+        theme.play()
+      })
+    </script>
+  </body>
 </html>
