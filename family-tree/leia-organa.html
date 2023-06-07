@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leia Organa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ind">
+      <img class="planet show" src="images/ajankloss.png" alt="" /><img class="planet hide" src="images/ajankloss-glow.png" alt="" />
+      <h1>Leia Organa</h1>
+      <h2>
+        Time of death: 35 ABY (After the Battle of Yavin) - <br class="mobile-break" />
+        Place of death: Ajan Kloss
+      </h2>
+      <p>Owen Lars became the stepbrother to Anakin Skywalker after his father, Cliegg, married Shmi Skywalker. When Obi-wan Kenobi contacts Owen in 19 BBY with the task of taking care of Anakin’s infant son, Luke, it is revealed that Cliegg had since passed away and Owen married his girlfriend Beru.</p>
+      <p>In 0 BBY, Owen and Luke purchased the droid R2-D2, who, unbeknownst to them, contained stolen plans for the Imperial superweapon, the Death Star. Stormtroopers tracked the droid to the Lars’ homestead where they interrogated and burned both Owen and Beru alive while Luke was away.</p>
+      <img class="feature" src="images/leia-death.jpg" alt="" />
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+      $('.show').hover(function () {
+        $('.show').css('z-index', '-1')
+        $('.hide').css('z-index', '99').css('display', 'inline-block')
+      })
+      $('.show').mouseleave(function () {
+        $('.show').css('z-index', '99')
+        $('.hide').css('z-index', '-1').css('display', 'none')
+      })
+    </script>
+  </body>
+</html>

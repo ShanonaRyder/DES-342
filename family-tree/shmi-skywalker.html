@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shmi Skywalker</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="ind">
-        <img class="planet" src="images/tatooine.png" alt="">
-        <h1>Shmi Skywalker</h1>
-        <h2>Time of death: 22 BBY (Before the Battle of Yavin) - <br class="mobile-break"> Place of death: Tatooine</h2>
-        <p>A human female living as a slave on Tatooine. She gave birth to Anakin Skywalker in 32 BBY and sent him to train as a Jedi several years later. After her son’s 
-            departure, she married Cliegg Lars who had a son named Owen. In 22 BBY, she was captured and tortured by Tusken Raiders. Her son returned to Tatooine to save her 
-            after having nightmares about her demise but he was unfortunately too late. She died in his arms after a heartfelt goodbye. 
-        </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur illo excepturi totam, consequatur quidem aliquid ipsam ab explicabo nobis doloremque rerum illum, 
-            deleniti repellat nisi vel in. Optio veritatis delectus temporibus odio, eius expedita consequatur perferendis consectetur tempore labore dolor dolorum vel dolore 
-            quam tempora, mollitia, sed magni non.
-        </p>
-        <img src="images/shmideath.jpg" alt="">
+      <img class="planet show" src="images/tatooine.png" alt="" />
+      <a href="index.html"><img class="planet hide" src="images/tatooine-glow.png" alt="" /></a>
+      <h1>Shmi Skywalker</h1>
+      <h2>Time of death: 22 BBY (Before the Battle of Yavin) - <br class="mobile-break"> 
+        Place of death: Tatooine</h2>
+      <p>Shmi Skywalker lived on the planet of Tatooine as a slave for the Toydarian junk dealer, Watto, during the last years of the Galactic Republic. She gave birth to her son, 
+        Anakin Skywalker, in 41 BBY and sent him to train as a Jedi after he was discovered by Jedi Master, Qui-Gon Jinn, several years later. Some time after her son’s departure, 
+        Shmi was sold to Cliegg Lars, a man she later married, and his son Owen. </p>
+      <p>In 22 BBY (Episode II), Shmi was captured and tortured by a group of Tusken Raiders. Her son, now a Jedi Padawan, returned to Tatooine in an attempt to save her after having 
+        nightmares of her impending demise but he, unfortunately, was too late. Shmi died in Anakin’s arms after a heartfelt goodbye expressing how proud she was to see him all grown up.</p>
+      <img class="feature" src="images/shmi-death.jpg" alt="" />
     </div>
-</body>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+      $('.show').hover(function () {
+        $('.show').css('z-index', '-1')
+        $('.hide').css('z-index', '99').css('display', 'inline-block')
+      })
+      $('.show').mouseleave(function () {
+        $('.show').css('z-index', '99')
+        $('.hide').css('z-index', '-1').css('display', 'none')
+      })
+    </script>
+  </body>
 </html>
+    
