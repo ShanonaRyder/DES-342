@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+}
+section{
+    height: 100vh;
+}
+img {
+    width: 100%;
+  }
+.nav{
+    background-color:#8d9e7a;
+    height:80px;
+    width: 100%;
+}
+.nav a{
+    float: right;
+    color: white;
+    font-size: 18pt;
+    text-align: center;
+    text-decoration: none;
+    padding: 26px;
+}
+ul{
+    list-style-type: none;
+}
+a:hover{
+    background-color: #4c5c42;
+}
+.left{
+    width: 81vh;
+    float: left;
+    margin-right: 6%;
+}
+.right{
+    width: 81vh;
+    float: right;
+    margin-left: 6%;
+}
+.intro{
+    background-color: beige;
+}
+.guava{
+    background-color: #F27075;
+}
+.pomegranate{
+    background-color:#E3506A;
+}
+.honey{
+    background-color: #EDB033;
+}
+.mango{
+    background-color: #F2774D;
+}
+.coconut{
+    background-color: #6C4B42;
+}
+p{
+    color: white;
+    display: block;
+    font-size: 25pt;
+    text-align: left;
+    line-height: 35pt;
+}
+.right-text{
+    padding: 5% 5% 5% 45%;
+}
+.left-text{
+    padding: 5% 5% 45% 5%;
+}
