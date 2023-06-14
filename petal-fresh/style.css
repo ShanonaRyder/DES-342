@@ -2,30 +2,42 @@
     margin: 0;
     scroll-behavior: auto;
 }
+body{
+    overflow-x: hidden;
+}
 section{
     height: 100vh;
 }
 img {
     width: 100%;
   }
-.nav{
+.nav-bar{
     background-color:#8d9e7a;
-    height:80px;
+    height:90px;
     width: 100%;
 }
-.nav a{
+.nav-bar img{
+    float: left;
+    width: 80px;
+    padding: 5px 20px 5px 20px;
+}
+.nav-container li a{
     float: right;
     color: white;
     font-size: 18pt;
     text-align: center;
     text-decoration: none;
-    padding: 26px;
+    padding: 31.5px;
 }
 ul{
     list-style-type: none;
 }
-a:hover{
+li a:hover{
     background-color: #4c5c42;
+}
+.intro{
+    background-image: url(images/cover.jpg);
+    background-size: cover;
 }
 .left{
     width: 81vh;
@@ -38,7 +50,7 @@ a:hover{
     margin-left: 6%;
 }
 .intro{
-    background-color: beige;
+    background-color: #697a8c;
 }
 .guava{
     background-color: #db454c;
@@ -70,4 +82,31 @@ p{
 }
 .left-text{
     padding: 5% 5% 45% 5%;
+}
+.video{
+    width:100%;
+    height: 60vh;
+    overflow: hidden;
+    background-size: cover;
+    padding-bottom: 1%;
+}
+#video{
+    position: relative;
+    top: 52%;
+    transform: translateY(-52%);
+}
+.our-story{
+    height: 50vh;
+}
+.our-story h1{
+    color: #4c5c42;
+    font-size: 20pt;
+    padding: 3.5% 10% 0% 10%;
+    line-height: 26pt;
+}
+.our-story p{
+    color: #4c5c42;
+    font-size: 16pt;
+    padding: 3.5% 10% 0% 10%;
+    line-height: 24pt;
 }
